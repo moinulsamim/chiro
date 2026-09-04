@@ -5,8 +5,19 @@ const path = require("path");
 const dir = path.join(__dirname, "public", "images");
 fs.mkdirSync(dir, { recursive: true });
 
+// Escape XML special characters so captions like "Headache & Migraine Relief" stay valid SVG
+function escapeXml(s) {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function svg({ w, h, from, to, caption, body }) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${caption}">
+  const safeCaption = escapeXml(caption);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${safeCaption}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="${from}"/>
@@ -20,7 +31,7 @@ function svg({ w, h, from, to, caption, body }) {
   </g>
   ${body}
   <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="${w / 2}" y="${h - 46}" font-size="26" font-weight="700" fill="#0f2438" opacity="0.85">${caption}</text>
+    <text x="${w / 2}" y="${h - 46}" font-size="26" font-weight="700" fill="#0f2438" opacity="0.85">${safeCaption}</text>
     <text x="${w / 2}" y="${h - 20}" font-size="16" fill="#0f2438" opacity="0.5">Placeholder photo — replace with real clinic imagery</text>
   </g>
 </svg>`;
