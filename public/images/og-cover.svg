@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2438"/>
+      <stop offset="100%" stop-color="#09986a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.12" fill="none" stroke="#ffffff" stroke-width="2">
+    <circle cx="1020" cy="94.5" r="90"/>
+    <circle cx="120" cy="535.5" r="130"/>
+  </g>
+  
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="270" font-size="76" font-weight="800" fill="#ffffff">Vital Chiropractic</text>
+    <text x="600" y="340" font-size="34" fill="#7eeabe">Expert care for back pain, neck pain &amp; injuries</text>
+    <text x="600" y="400" font-size="26" fill="#ffffff" opacity="0.7">Same-week appointments · Austin, TX · (555) 123-4567</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">  </g>
+</svg>

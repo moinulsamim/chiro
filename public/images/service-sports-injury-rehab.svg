@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-label="Sports Injury Rehab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9fbea"/>
+      <stop offset="100%" stop-color="#3bd69e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <g opacity="0.12" fill="none" stroke="#ffffff" stroke-width="2">
+    <circle cx="680" cy="84" r="90"/>
+    <circle cx="80" cy="476" r="130"/>
+  </g>
+  
+  <rect x="180" y="200" width="360" height="220" rx="32" fill="#ffffff" opacity="0.6"/>
+  <path d="M300 420 v-100 h30 v-40 h30 v-30 h30 v-50 h30 v50 h30 v30 h30 v40 h30 v100" fill="none" stroke="#09986a" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="580" cy="230" r="40" fill="#09986a" opacity="0.45"/>
+  <path d="M564 230 l11 11 22 -22" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="560" cy="300" r="30" fill="#e8b088"/>
+  <path d="M536 340 q24 -30 48 0 v60 h-48 z" fill="#09986a"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="514" font-size="26" font-weight="700" fill="#0f2438" opacity="0.85">Sports Injury Rehab</text>
+    <text x="400" y="540" font-size="16" fill="#0f2438" opacity="0.5">Placeholder photo — replace with real clinic imagery</text>
+  </g>
+</svg>
